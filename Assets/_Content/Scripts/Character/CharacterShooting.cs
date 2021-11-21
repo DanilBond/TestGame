@@ -7,7 +7,9 @@ public class CharacterShooting : MonoBehaviour
     public GameObject bullet;
     GameObject _muzzle;
 
-    private void Start() => _muzzle = GameObject.FindGameObjectWithTag("Muzzle");
+    private void Start() => FindMuzzle();
+
+        
 
     private void Update()
     {
@@ -23,6 +25,11 @@ public class CharacterShooting : MonoBehaviour
             }
 
         }
+    }
+
+    public void FindMuzzle()
+    {
+        _muzzle = GameObject.FindGameObjectWithTag("Muzzle");
     }
 
     void Shoot()

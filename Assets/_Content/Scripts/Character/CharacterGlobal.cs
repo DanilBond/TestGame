@@ -9,6 +9,8 @@ public class CharacterGlobal : MonoBehaviour
     public CharacterParameters parameters;
     public CharacterMovement characterMovement;
     public CharacterAnimations characterAnimations;
+    public CharacterShooting characterShooting;
+    public CharacterWeaponChanger characterWeaponChanger;
 
     public Components components;
 
